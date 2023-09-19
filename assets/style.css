@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+header {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+button {
+    border: solid 4px red;
+}
