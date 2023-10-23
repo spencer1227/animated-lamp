@@ -43,6 +43,39 @@ function checkAnswer(btn) {
     displayQuestion();
   }
 }
+
+// function nextQuestion() {
+//   pEl.textContent = question[q].title;
+//   for (let index = 0; index < question[q].answers.length; index++) {
+//     let button = document.createElement(“button”);
+//     // button.textContent = “”;
+//     button.textContent = question[q].answers[index];
+//     // console.log(document.getElementById(“btnhlder2”));
+//     document.getElementById(“btnhlder2").appendChild(button)
+//     button.addEventListener(‘click’, function () {
+//       if (button.innerText == question[q].correctAnswer) {
+//         console.log(score);
+//         document.getElementById(‘btnhlder2’).innerHTML = “”;
+//         score += 1;
+//         console.log(score);
+//         scoreBoard.innerHTML = score;
+//         q += 1;
+//         nextQuestion();
+//       }
+//       else {
+//         console.log(‘incorrectAnswer’)
+//         document.getElementById(“btnhlder2").innerHTML = “”;
+//         scoreBoard.innerHTML = score;
+//         console.log(score);
+//         scoreBoard.innerHTML = score;
+//         q += 1;
+//         nextQuestion();
+//       }
+//       if (question[3]){
+//       console.log(quizover);
+//     }
+//   }}};
+
 function endQuiz() {
   clearInterval(timerInterval);
   // Display game over message

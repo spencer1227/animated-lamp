@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,4 +13,72 @@
         <button id="start">START</button>
         <script src="./assets/script.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset=“UTF-8">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel=“stylesheet” href=“./assets/style.css”>
+</head>
+<body>
+    <div class=“container”>
+        <div id=“question-container” class=“hide”></div>
+    </div>
+    <!-- divs in the whole of the body and ids it body -->
+    <div id=“body”>
+        <!-- puts together clock  -->
+        <div class=“controls”>
+            <span id=“count”>30</span> seconds
+            <div id=“inputBox”>
+                <!-- logs data in console -->
+                <form action=“text”>
+            <input id=“input” type=“text” placeholder=“Name/score”>
+             <button onclick=“showEl()“>Submit</button>
+            </form>
+            </div>
+            <br>
+            <h1 id=“userScore”>Score</h1>
+            <div id = “textandquestion”>
+            <div id=“text-area”>
+                <h1>WELCOME TO THE QUIZ</h1>
+                <h2>Test your knowldege on the language of JavaScript</h2>
+                <h3>Press START to begin quiz</h3>
+                <button id=‘start’ onclick=“start(), nextQuestion()“>
+                    START
+                </button>
+            </div>
+            <div class=“question-holder” id=“question-holder”>
+                <h1 id=“question”></h1>
+                <h3 id=“q2"></h3>
+                <div id=“buttons”>
+                    <div id=“btnholder” class=“button-holder” onclick=“nextQuestion()“></div>
+                    <div id=“btnhlder2”></div>
+                    <!-- <div id=“nxt”></div> -->
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- <label id=“label” for=“Name”></label> -->
+        <!-- <div id=“qcc”></div>
+    <h2 id=“questions container”></h2>
+    <div id=“answer-buttons”></div> -->
+        <script src=“./assets/script.js”></script>
+</body>
 </html>
+
+React
+
+Reply
+
+
+
+
+
+
+
+
+
+
