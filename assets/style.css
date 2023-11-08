@@ -1,14 +1,11 @@
+* {
+    text-align: center;
+    background-color: antiquewhite;
+}
+    
 .quiz, .scores {
     margin: 100px auto 0 auto;
     max-width: 500px;
-}
-
-p {
-    margin: 15px 15px;
-}
-
-.landing {
-    text-align: center;
 }
 
 .scoresHeader {
@@ -17,7 +14,7 @@ p {
     left: 15px;
 }
 
-.timer {
+.timer p {
     background-color: green;
     color: white;
     margin: 10px auto 0 auto;
@@ -25,7 +22,11 @@ p {
     padding: 10px;
     text-align: center;
     max-width: 300px;
+}
 
+.timer span {
+    background-color: green;
+    color: white;
 }
 
 button {
@@ -48,11 +49,24 @@ button {
     display: none;
 }
 
-#feedback {
-    font-style: bold;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 15px;
-    color: #fff;
-    border-top: 2px solid #4B0082;
+#options {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+#score {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    color: white;
+    max-width: 200px;
+    padding: 10px;
+}
+
+#score span {
+    background-color: green;
+    color: white;
 }

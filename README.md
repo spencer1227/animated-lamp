@@ -24,10 +24,15 @@ WHEN the game is over
 THEN I can save my initials and my score
 
 ## Mock-Up
+I created two seperate HTML and Javascripts, one for the standard quiz page and one for the high score list. I also created a stylesheet with CSS.
 
 ## Technologies Used
+HTML, CSS, Javascript
 
 ## Links 
+GitHub Repo: [https://github.com/spencer1227/animated-lamp]
 
-## Screenshot
+Deploy: [https://spencer1227.github.io/animated-lamp/]
 
+## Video
+Video: [https://drive.google.com/file/d/1VzdQo7pQvpa2-CXK38zzrYqV6ywreusD/view]
