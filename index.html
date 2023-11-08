@@ -1,78 +1,54 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>JavaScript Quiz</title>
-</head>
-<body>
-    <header>JavaScript Quiz</header>
-        <h2 id="time">High Scores</h2>
-        <div id="main"></div>
-        <button id="start">START</button>
-        <script src="./assets/script.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
-<html lang=“en”>
-<head>
-    <meta charset=“UTF-8">
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel=“stylesheet” href=“./assets/style.css”>
-</head>
-<body>
-    <div class=“container”>
-        <div id=“question-container” class=“hide”></div>
-    </div>
-    <!-- divs in the whole of the body and ids it body -->
-    <div id=“body”>
-        <!-- puts together clock  -->
-        <div class=“controls”>
-            <span id=“count”>30</span> seconds
-            <div id=“inputBox”>
-                <!-- logs data in console -->
-                <form action=“text”>
-            <input id=“input” type=“text” placeholder=“Name/score”>
-             <button onclick=“showEl()“>Submit</button>
-            </form>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="./highscore.html"><button class="scores-header" id="view-high-scores">View High Scores</button></a>
             </div>
-            <br>
-            <h1 id=“userScore”>Score</h1>
-            <div id = “textandquestion”>
-            <div id=“text-area”>
-                <h1>WELCOME TO THE QUIZ</h1>
-                <h2>Test your knowldege on the language of JavaScript</h2>
-                <h3>Press START to begin quiz</h3>
-                <button id=‘start’ onclick=“start(), nextQuestion()“>
-                    START
-                </button>
+        
+            <div class="timer">
+                <p>Time Remaining: 
+                    <span id="timer">0</span>
+                    seconds
+                </p>
             </div>
-            <div class=“question-holder” id=“question-holder”>
-                <h1 id=“question”></h1>
-                <h3 id=“q2"></h3>
-                <div id=“buttons”>
-                    <div id=“btnholder” class=“button-holder” onclick=“nextQuestion()“></div>
-                    <div id=“btnhlder2”></div>
-                    <!-- <div id=“nxt”></div> -->
+        </header>
+        
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" id="start">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Answer the following questions within the time limit. Incorrect answers will penalize your score/time by ten seconds. Good Luck!</p>
+                    <button id="start">Start Quiz</button>
                 </div>
             </div>
+
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options"></div>
             </div>
-        </div>
-<!-- <label id=“label” for=“Name”></label> -->
-        <!-- <div id=“qcc”></div>
-    <h2 id=“questions container”></h2>
-    <div id=“answer-buttons”></div> -->
-        <script src=“./assets/script.js”></script>
-</body>
+
+            <div class="hide" id="quiz-end">
+                <h2>All Done!</h2>
+                <p>Your final score is: <span id="final"></span></p>
+                <p>Please enter your name: <input type="text" id="name" max="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback"></div>
+        </main>
+        <script src="./assets/script.js"></script>
+    </body>
 </html>
-
-React
-
-Reply
-
 
 
 
