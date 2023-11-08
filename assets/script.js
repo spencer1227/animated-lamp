@@ -35,7 +35,7 @@ var feedbackEl = document.querySelector("#feedback");
 var reStartBtn = document.querySelector("#restart");
 
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+var time = questions.length * 20;
 var timerId;
 
 function quizStart() {
@@ -49,7 +49,7 @@ function quizStart() {
 
 function getQuestion() {
   var currentQuestion = questions[currentQuestionIndex];
-var promptEl = document.getElementById("question-words")
+var promptEl = document.getElementById("question-new")
   promptEl.textContent = currentQuestion.prompt;
   choicesEl.innerHTML = "";
   currentQuestion.options.forEach(function(choice, i) {
@@ -88,7 +88,7 @@ function questionClick() {
 
 function quizEnd() {
   clearInterval(timerId);
-  var endScreenEl = document.getElementById("quiz-end");
+  var endScreenEl = document.getElementById("completed");
   endScreenEl.removeAttribute("class");
   var finalScoreEl = document.getElementById("final");
   finalScoreEl.textContent = time;
