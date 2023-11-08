@@ -8,12 +8,6 @@
     max-width: 500px;
 }
 
-.scoresHeader {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-
 .timer p {
     background-color: green;
     color: white;
@@ -69,4 +63,10 @@ button {
 #score span {
     background-color: green;
     color: white;
+}
+
+#highscores {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }

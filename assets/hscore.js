@@ -1,4 +1,4 @@
-var scoresBtn = document.querySelector("#view-high-scores");
+var scoresBtn = document.querySelector("#view-scores");
 
 function printHighscores() {
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
