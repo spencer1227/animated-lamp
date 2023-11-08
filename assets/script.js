@@ -68,10 +68,10 @@ function questionClick() {
       time = 0;
     }
     timerEl.textContent = time;
-    feedbackEl.textContent = `Incorrect! The correct answer was ${questions[currentQuestionIndex].answer}.`;
+    feedbackEl.textContent = `Incorrect. Correct answer: ${questions[currentQuestionIndex].answer}.`;
     feedbackEl.style.color = "red";
   } else {
-    feedbackEl.textContent = "Correct!";
+    feedbackEl.textContent = "Correct";
     feedbackEl.style.color = "green";
   }
   feedbackEl.setAttribute("class", "feedback");
